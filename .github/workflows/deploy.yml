@@ -1,9 +1,8 @@
 name: Deploy to Cloudflare Pages
 
 on:
-  push:
-    branches:
-      - main
+  repository_dispatch:
+    types: [deploy]
 
 jobs:
   deploy:
